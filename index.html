@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Het Gajjar — Software Engineer</title>
+<meta name="description" content="Het Gajjar — Software Engineer specializing in full-stack web applications, REST APIs, and data structures & algorithms. Explore projects including GoTogether, Wanderlust, and Crypto Investment Advisor.">
+<meta name="keywords" content="Het Gajjar, Software Engineer, Full Stack Developer, React, Node.js, MongoDB, Java, Portfolio">
+<meta name="author" content="Het Gajjar">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Het Gajjar — Software Engineer">
+<meta property="og:description" content="Full-stack developer building scalable web applications with Java, JavaScript, Node.js, React and MongoDB.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/het-photo.png">
+
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAA5JREFUOE9jYBgFo2AUjAIACBAAAQ0G0j8AAAAASUVORK5CYII=">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Noise / grid backdrop -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">HG<span class="nav-logo-dot">.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      </button>
+      <a href="assets/Het_Gajjar_Resume.pdf" download class="btn btn-ghost btn-sm nav-resume">Resume</a>
+      <button id="navToggle" class="nav-burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow reveal"><span class="status-dot" aria-hidden="true"></span> Available for opportunities</p>
+
+        <h1 class="hero-title reveal">
+          <span class="hero-title-line">Het Gajjar</span>
+        </h1>
+
+        <div class="hero-role reveal">
+          <span class="hero-role-prefix">$</span>
+          <span id="typedRole" class="hero-role-text"></span><span class="caret">_</span>
+        </div>
+
+        <p class="hero-desc reveal">
+          Full-Stack Software Engineer specializing in the MERN stack. I build responsive web applications, design clean REST APIs, and create scalable solutions with a strong focus on performance, usability, and maintainable code.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/Het_Gajjar_Resume.pdf" download class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <div class="hero-socials reveal">
+          <a href="https://github.com/Hetg411" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/het-gajjar-04n2004/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="mailto:ghet0042@gmail.com" aria-label="Email" class="social-link">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow" aria-hidden="true"></div>
+          <div class="hero-photo-frame">
+            <img src="assets/het-photo.png" alt="Portrait of Het Gajjar" class="hero-photo" width="413" height="413">
+          </div>
+         
+          <div class="hero-badge hero-badge-bottom">
+            <span class="mono-label">Stack</span>
+            <span class="hero-badge-value">MERN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue reveal" aria-hidden="true">
+      <span class="mono-label">Scroll</span>
+      <div class="scroll-cue-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">About</p>
+      <div class="about-grid">
+        <h2 class="section-title reveal">
+          I care about writing software that's understandable, maintainable, and built to last —
+          not just software that works.
+        </h2>
+        <div class="about-body reveal">
+          <p>
+            I'm a B.Tech graduate in Information & Communication Technology from Pandit Deendayal Energy University with a passion for building scalable full-stack web applications. I enjoy designing REST APIs, structuring efficient databases, and creating responsive, user-focused interfaces using the MERN stack.
+          </p>
+          <p>
+            During my internship at ESPM Sense, I developed real-time IoT dashboards in ThingsBoard and automated business workflows by integrating ERPNext with Bitrix24. I enjoy turning ideas into practical solutions through projects like a geolocation-based carpooling platform and a hotel discovery application, while continuously strengthening my problem-solving and software engineering skills.
+          </p>
+          <div class="about-facts">
+            <div class="about-fact">
+              <span class="about-fact-num">3</span>
+              <span class="about-fact-label">Full-stack projects shipped</span>
+            </div>
+            <div class="about-fact">
+              <span class="about-fact-num">250+</span>
+              <span class="about-fact-label">LeetCode problems solved</span>
+            </div>
+            <div class="about-fact">
+              <span class="about-fact-num">2026</span>
+              <span class="about-fact-label">Graduation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="section-title reveal">Tools I reach for</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3 class="skill-card-title"><span class="mono-label">01</span> Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+          </div>
+          <p class="skill-card-note">Data Structures &amp; Algorithms in Java, applied daily on LeetCode.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3 class="skill-card-title"><span class="mono-label">02</span> Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">EJS</span>
+          </div>
+          <p class="skill-card-note">Interfaces that stay responsive and legible at every breakpoint.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3 class="skill-card-title"><span class="mono-label">03</span> Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <p class="skill-card-note">Schemas and endpoints designed for clarity and scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Experience</p>
+      <h2 class="section-title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-card-head">
+              <h3>Frontend Intern</h3>
+              <span class="mono-label timeline-date">Jun 2025 – Jul 2025</span>
+            </div>
+            <p class="timeline-company">ESPM Sense Private Limited</p>
+            <ul class="timeline-list">
+              <li>Developed and customized interactive IoT dashboards in ThingsBoard for real-time sensor data visualization and system monitoring.</li>
+              <li>Built client-side and server-side scripts in ERPNext to automate daily work report submissions, improving reporting accuracy.</li>
+              <li>Integrated ERPNext with Bitrix24 via REST APIs to sync project tasks and deliver instant notifications across teams.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Projects</p>
+      <h2 class="section-title reveal">Things I've built</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="mono-label">Web App</span>
+            <a href="https://github.com/Hetg411/GoTogether-Carpooling-Web-Application" target="_blank" rel="noopener" class="project-link" aria-label="GoTogether on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">GoTogether</h3>
+          <p class="project-desc">A full-stack carpooling platform with secure auth, where riders and drivers are matched by a geolocation algorithm within a 1&nbsp;km radius.</p>
+          <ul class="project-highlights">
+            <li>Google Maps API geolocation matching</li>
+            <li>Real-time ride request &amp; notification system</li>
+            <li>WebSocket-based live location sharing</li>
+          </ul>
+          <div class="skill-tags project-tags">
+            <span class="tag tag-sm">MongoDB</span>
+            <span class="tag tag-sm">Express</span>
+            <span class="tag tag-sm">Node.js</span>
+            <span class="tag tag-sm">EJS</span>
+          </div>
+          <a href="https://github.com/Hetg411/GoTogether-Carpooling-Web-Application" target="_blank" rel="noopener" class="project-cta">View source →</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="mono-label">Web App</span>
+            <a href="https://github.com/Hetg411/Major_Project" target="_blank" rel="noopener" class="project-link" aria-label="Wanderlust on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">Wanderlust</h3>
+          <p class="project-desc">A hotel discovery platform with location-based search, role-based access control, and a listing manager for hotel owners.</p>
+          <ul class="project-highlights">
+            <li>Google Maps API for location-based search</li>
+            <li>Secure, role-based authentication</li>
+            <li>Owner-facing listing management module</li>
+          </ul>
+          <div class="skill-tags project-tags">
+            <span class="tag tag-sm">Node.js</span>
+            <span class="tag tag-sm">Express</span>
+            <span class="tag tag-sm">MongoDB</span>
+            <span class="tag tag-sm">EJS</span>
+          </div>
+          <a href="https://github.com/Hetg411/Major_Project" target="_blank" rel="noopener" class="project-cta">View source →</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="mono-label">ML + Web</span>
+            <a href="https://github.com/Hetg411/-Crypto-Investment-Advisor-" target="_blank" rel="noopener" class="project-link" aria-label="Crypto Investment Advisor on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">Crypto Investment Advisor</h3>
+          <p class="project-desc">A data-driven advisor that turns salary, risk tolerance, and duration into a concrete crypto investment plan.</p>
+          <ul class="project-highlights">
+            <li>LSTM model forecasting future coin values</li>
+            <li>Personalized allocation &amp; return estimates</li>
+            <li>React interface for algorithm-driven insights</li>
+          </ul>
+          <div class="skill-tags project-tags">
+            <span class="tag tag-sm">React</span>
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">JavaScript</span>
+          </div>
+          <a href="https://github.com/Hetg411/-Crypto-Investment-Advisor-" target="_blank" rel="noopener" class="project-cta">View source →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Education</p>
+      <h2 class="section-title reveal">Academic background</h2>
+
+      <div class="edu-card glass reveal">
+        <div class="edu-card-main">
+          <h3>Bachelor of Technology — Information &amp; Communication Technology</h3>
+          <p class="edu-card-school">Pandit Deendayal Energy University, Gandhinagar</p>
+        </div>
+        <span class="mono-label timeline-date">Sep 2022 – Jun 2026</span>
+      </div>
+
+      <p class="section-eyebrow reveal certs-eyebrow">Certifications</p>
+      <div class="cert-list reveal">
+        <div class="cert-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <span>Data Structures and Algorithms with Java</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="section-title reveal">Let's build something together</h2>
+      <p class="contact-lead reveal">Have a role, project, or idea in mind? My inbox is open.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form glass reveal" id="contactForm" novalidate>
+  <input type="hidden" name="access_key" value="29a9a98e-c4b5-4301-99e9-1fe4e5b8ff11">
+  <input type="checkbox" name="botcheck" class="hidden-field" style="display:none" tabindex="-1" autocomplete="off">
+  <div class="form-row">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+  </div>
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+  </div>
+  <div class="form-row">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary form-submit">
+    <span class="btn-label">Send Message</span>
+  </button>
+  <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+</form>
+
+        <div class="contact-side reveal">
+          <a href="mailto:ghet0042@gmail.com" class="contact-side-item glass">
+            <span class="contact-side-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+            </span>
+            <span>
+              <span class="mono-label">Email</span>
+              <span class="contact-side-value">ghet0042@gmail.com</span>
+            </span>
+          </a>
+          <a href="tel:+919313211448" class="contact-side-item glass">
+            <span class="contact-side-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+              <span class="mono-label">Phone</span>
+              <span class="contact-side-value">+91 93132 11448</span>
+            </span>
+          </a>
+          <a href="https://github.com/Hetg411" target="_blank" rel="noopener" class="contact-side-item glass">
+            <span class="contact-side-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            </span>
+            <span>
+              <span class="mono-label">GitHub</span>
+              <span class="contact-side-value">github.com/Hetg411</span>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/het-gajjar-04n2004/" target="_blank" rel="noopener" class="contact-side-item glass">
+            <span class="contact-side-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            </span>
+            <span>
+              <span class="mono-label">LinkedIn</span>
+              <span class="contact-side-value">het-gajjar-04n2004</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#hero" class="nav-logo">HG<span class="nav-logo-dot">.</span></a>
+    <p class="footer-text">Designed &amp; built by Het Gajjar.</p>
+    <div class="hero-socials footer-socials">
+      <a href="https://github.com/Hetg411" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/het-gajjar-04n2004/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      </a>
+      <a href="mailto:ghet0042@gmail.com" aria-label="Email" class="social-link">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+      </a>
+    </div>
+    <p class="footer-year mono-label">© 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
